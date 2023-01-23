@@ -9,7 +9,7 @@ def hash_preimage(target_string):
         return
 
     lenth = len(target_string) 
-    itt = 2**(lenth+1)  
+    itt = 2**(lenth+2)  
     target = int(target_string, 2)
     print(target_string, target, lenth)
     print('=================') 
