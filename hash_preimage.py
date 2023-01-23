@@ -11,7 +11,7 @@ def hash_preimage(target_string):
     lenth = len(target_string) 
     itt = 2**(lenth+1)  
     target = int(target_string, 2)
-    print(target, lenth)
+    print(target_string, target, lenth)
     print('=================') 
     bits = 1 << lenth 
     letters = string.ascii_letters   
