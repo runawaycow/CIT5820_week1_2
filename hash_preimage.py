@@ -21,6 +21,8 @@ def hash_preimage(target_string):
       test = int(bin(int(hashcode_1,16) & (bits - 1)),2)
       #print(test)
       if target == test:
+        print(string_1, test)
+        print(bin(int(hashcode_1,16)))
         return string_1
 
     nonce = b'\x00'
