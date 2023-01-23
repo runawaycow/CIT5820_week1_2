@@ -11,8 +11,8 @@ def hash_preimage(target_string):
     lenth = len(target_string) 
     itt = 2**(lenth+2)  
     target = int(target_string, 2)
-    print(target_string, target, lenth)
-    print('=================') 
+    #print(target_string, target, lenth)
+    #print('=================') 
     bits = 1 << lenth 
     letters = string.ascii_letters   
     for i in range(0, itt): 
@@ -21,8 +21,8 @@ def hash_preimage(target_string):
       test = int(bin(int(hashcode_1,16) & (bits - 1)),2)
       #print(test)
       if target == test:
-        print(string_1, test)
-        print(bin(int(hashcode_1,16)))
+        #print(string_1, test)
+        #print(bin(int(hashcode_1,16)))
         return string_1
 
     nonce = b'\x00'
